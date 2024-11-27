@@ -10,10 +10,6 @@ h1,h2,h3,h4,h5,h6{
     font-family: "Danfo", serif;
 }
 
-.arriba{
-    height: 180px;
-    background-color: #e0db7dba;
-}
 .header{
     background-image: linear-gradient(to bottom, #d64525c2, #da602cb5, #dd7738bf,
     #e08f48c8, #e3a15bc0, #e4ad64b4, #e6b86dbd, #e7c478ae, #e6c978b1,
@@ -23,20 +19,18 @@ h1,h2,h3,h4,h5,h6{
     position: sticky;
     top:0;
     z-index:1000;
-    height: 180px;
+    height: 110px;
     width: 100%;
-    padding: 20px;
+    padding: 60px 20PX; 
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
     h1{
-        position: absolute;
-        right: 55%;
-        top:50%;
+        display: flex;
     }
     nav{
-        width: 50%;
+        width: 70vh;
         ul{
             list-style: none;
             display: flex;
@@ -44,9 +38,10 @@ h1,h2,h3,h4,h5,h6{
             justify-content: space-evenly;
             li{
                a{
+                width: 80%;
                 color: #816d25;
                 text-decoration: none;
-                font-size: 1.2rem;
+                font-size: 1em;
                 }
             }
         }
@@ -56,6 +51,11 @@ h1,h2,h3,h4,h5,h6{
         height: 80px;
     }
 
+}
+
+.arriba{
+    height: 120px;
+    background-color: #e0db7dba;
 }
 h1{
     color: #816d25;
@@ -77,16 +77,23 @@ a{
     text-decoration: none;
     font-size: 1.2em;
 }
+.tituloPrincipalIndex{
+    background-color: #e0db7dba;
+}
 .principalIndex{
     background-image: url(../assets/img/imagen_picada_de_fondo.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    margin-bottom: 20px;
+    padding-bottom: 10px;
     padding-top: 5px;
+    margin-bottom: 10px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    h2{
+        color: rgb(216, 168, 77);
+    }
     .textoPrincipalIndex{
         margin: 0 auto;
         margin-top: 10px;
@@ -111,52 +118,81 @@ a{
             #e6c978, #e5cf79, #e3d57b, #e0db7d);
             border: 2px solid rgb(227, 192, 127);
             border-radius: 5px;
-            box-shadow: 6px 8px 7px 5px rgba(222,153,89,1);
-            -webkit-box-shadow: 6px 8px 7px 5px rgba(222,153,89,1); 
-            -moz-box-shadow: 6px 8px 7px 5px rgba(222,153,89,1);
+            box-shadow:10px 10px 5px 0px rgba(188, 124, 20, 0.75);
+            
         }
     }
 }
 
 .productosDestacados{
-    margin: 0 auto;
-    margin-top: 40px;
-    width: 90%;
-    margin-bottom: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-    img{
-        width: 170px;
-        border-radius: 5%;
-    }
-    .tarjetaProductos{
+    .galeriaDestacados{
+        margin: 0 auto;
+        margin-top: 50px;
+        width: 90%;
+        margin-bottom: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        img{
         width: 200px;
-        height: 200px;
+        padding: 5px;
+        border-radius: 5px;
+        }
+        .tarjetaProductos{
+        width: 200px;
+        height: 240px;
         text-align: center;
+        border: 1px solid black;
+        border-radius: 5px;
+        box-shadow: 10px 10px 5px 0px rgba(188, 124, 20, 0.75);
+        }
     }
-}
-
-.Nosotros{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin-top: 20px;
-    padding-top: 20px;
-    border: 2px solid rgb(244, 149, 42);
-    background-color: rgb(250, 230, 194);
-    margin-bottom: 20px;
-    justify-content: space-around
     
 }
 
-.clientesSatisfechos{
-    background-image: url(../assets/img/frente_local.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: left;
+.Nosotros{
+    .contenedorNosotros{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border: 2px solid rgb(244, 149, 42);
+    background-color: rgb(250, 230, 194);
+    margin-bottom: 20px;
+    .imgNosotros{
+        width: 50%;
+        border-radius: 20px;
+    }
+    .textoNosotros{
+        text-align: center;
+        width: 40%;
+        margin: 0 auto;
+        p{
+            line-height: 1.5;
+            /*display: inline-block;
+            padding-top: 20px;
+            padding-bottom: 20px;*/
+        }
+        a{
+            display: inline-block;
+            margin: 20px 20px;
+            padding: 10px 10px;
+            font-size: 1.2em;
+            background-image: linear-gradient(to bottom, #d64525, #da612c,
+            #dd7838, #e08e48, #e3a25b, #e4ad64, #e6b86d, #e7c378,
+            #e6c978, #e5cf79, #e3d57b, #e0db7d);
+            border: 2px solid rgb(227, 192, 127);
+            border-radius: 5px;
+            box-shadow:10px 10px 5px 0px rgba(188, 124, 20, 0.75); 
+        }
+    }
+    
+    }
+    
 }
+
 .galeria{
     display: flex;
     flex-wrap: wrap;
@@ -195,6 +231,59 @@ a{
     }
 }
 
+
+
+.galeriaFiabres{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 0.5fr 1fr;
+    grid-template-areas:"bondi frente"
+                        "jamon frente"
+                        "salami frente"
+                        "lomo picada";
+    gap: 25px;
+
+    .hijo_1{
+        grid-area:bondi;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .hijo_2{
+        grid-area:jamon;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .hijo_3{
+        grid-area:frente;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .hijo_4{
+        grid-area:salami;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .hijo_5{
+        grid-area: lomo;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .hijo_6{
+        grid-area: picada;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+
 .footer{
     background-image: linear-gradient(to bottom, #d64525, #da612c, #dd7838,
      #e08e48, #e3a25b, #e4ad64, #e6b86d, #e7c378, #e6c978, #e5cf79,
@@ -202,6 +291,7 @@ a{
     color:#816d25;
     font-size: 10px;
     height: 180px;
+    margin-top: 25px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
