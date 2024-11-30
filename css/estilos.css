@@ -283,6 +283,40 @@ a{
     }
 }
 
+.clientesSatisfechos{
+    h2{
+        margin: 25px;
+    }
+    .contenedorClientesSatisfechos{
+        margin: 0 auto;
+        margin-top: 50px;
+        width: 90%;
+        margin-bottom: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        img{
+        width: 200px;
+        padding: 5px;
+        border-radius: 5px;
+        }
+        .cliente{
+            width: 200px;
+        height: 240px;
+        text-align: center;
+        border: 1px solid black;
+        border-radius: 5px;
+        box-shadow: 10px 10px 5px 0px rgba(188, 124, 20, 0.75);
+        }
+    }
+    img{
+        width: 100%;
+        object-fit: cover;
+    }
+
+}
+
 
 .footer{
     background-image: linear-gradient(to bottom, #d64525, #da612c, #dd7838,
@@ -291,7 +325,6 @@ a{
     color:#816d25;
     font-size: 10px;
     height: 180px;
-    margin-top: 25px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
